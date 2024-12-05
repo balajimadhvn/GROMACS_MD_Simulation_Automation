@@ -25,7 +25,9 @@ This repository provides an automation script to run Molecular Dynamics (MD) sim
      - `NVT.mdp` (NVT equilibration)
      - `NPT.mdp` (NPT equilibration)
      - `MD.mdp` (production MD run)
-   - Place these files in the directory where the script is located.
+   - **LIG.itp**: The topology file for the ligand. You can obtain this file from **SwissParam**, a web-based tool for generating topology files for small molecules:
+     - Visit [SwissParam](http://www.swissparam.ch/) to generate the ligand's topology file.
+     - Once you input your ligand's structure, download the generated `LIG.itp` file and place it in the same directory as the script.
 
 ### 3. **Operating System**
    - The script is developed for **Ubuntu** or other Linux distributions.
@@ -57,7 +59,8 @@ This repository provides an automation script to run Molecular Dynamics (MD) sim
      - `REC.pdb` (receptor structure in PDB format)
      - `LIG.pdb` (ligand structure in PDB format)
      - `ions.mdp`, `EM.mdp`, `NVT.mdp`, `NPT.mdp`, `MD.mdp` (simulation parameter files)
-   
+     - `LIG.itp` (ligand topology file, obtained from [SwissParam](http://www.swissparam.ch/))
+
 ### 2. **Run the Script**
    - Make the script executable:
      ```bash
@@ -82,3 +85,4 @@ This repository provides an automation script to run Molecular Dynamics (MD) sim
      ```bash
      xmgrace rmsd.xvg
      ```
+
