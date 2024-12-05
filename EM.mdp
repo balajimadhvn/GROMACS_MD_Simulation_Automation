@@ -1,0 +1,12 @@
+; Energy Minimization
+
+integrator    = steep
+emtol         = 1000.0        ; Energy minimization tolerance (kJ/mol)
+emstep        = 0.01          ; Energy minimization step size
+nsteps        = 50000         ; Number of steps
+cutoff-scheme = Verlet
+ns-type       = grid
+coulombtype   = PME
+rvdw          = 1.0           ; Van der Waals cutoff in nm
+rcoulomb      = 1.0           ; Coulomb cutoff in nm
+pbc           = xyz           ; Periodic boundary conditions
